@@ -1,5 +1,11 @@
 return {
   {
+    "gennaro-tedesco/nvim-jqx",
+    event = { "BufReadPost" },
+    ft = { "json", "yaml" },
+  },
+
+  {
     "akinsho/toggleterm.nvim",
     version = "*",
     keys = {
@@ -10,5 +16,12 @@ return {
       },
     },
     config = true,
+  },
+
+  {
+    "ohakutsu/socks-copypath.nvim",
+    config = function()
+      require("socks-copypath").setup()
+    end,
   },
 }
