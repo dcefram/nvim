@@ -4,4 +4,11 @@ return {
     -- override default Find Files (Root Dir) to (cwd)
     { "<leader><space>", LazyVim.pick("files", { root = false }), desc = "Find Files (cwd)" },
   },
+  opts = {
+    pickers = {
+      find_files = {
+        hidden = true,
+      },
+    },
+  },
 }
